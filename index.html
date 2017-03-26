@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.0.0-alpha1.js"></script>
+    <link href="style.css"  rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <title>Timer</title>
+  </head>
+  <body>
+    <h1>Countdown Timer</h1>
+    <hr>
+    <div class="btn" id = "toTime" onclick="setVisible(true,'#setTime');reset = true;">Set Timer</div>
+    <div class="btn" id = "count" onclick="setVisible(true,'#countDwn');reset = true;">Set Countdown</div>
+    <h4 id="timer">0:00:00</h4>
+    <div class="btn" id="reset" onclick="reset = true;">reset</div>
+    <div class="modal" id="setTime">
+      <div class="content">
+        <div class="btn x" onclick="setVisible(false,'#setTime')">x</div>
+        <h1>Set Timer</h1>
+        <hr>
+        <p>Hours: <input type="text" id="hrs"></p>
+        <p>Minutes: <input type="text" id="mins"></p>
+        <p>Seconds: <input type="text" id="secs"></p>
+        <hr>
+        <div class="btn" id = "go" onclick="setTime();">start</div>
+      </div>
+    </div>
+
+    <div class="modal" id="countDwn">
+      <div class="content">
+        <div class="btn x" onclick="setVisible(false,'#countDwn')">x</div>
+        <h1>Set CountDown</h1>
+        <hr>
+        <input type="datetime-local" id="date">
+        <hr>
+        <div class="btn" id = "go" onclick="setCount();">start</div>
+      </div>
+    </div>
+  </body>
+</html>
