@@ -1,5 +1,6 @@
 body{
   font-family:sans-serif;
+  text-align:center;
 }
 h1{
   text-align:center;
@@ -25,8 +26,7 @@ h1{
   border-radius:5px;
   display:inline-block;
   font-size:35px;
-  margin-left: 50px;
-  margin-right: 50px;
+
   margin-top:50px;
   font-variant:small-caps;
   cursor: pointer;
@@ -40,11 +40,13 @@ h1{
   margin-top:-40px;
 }
 #toTime{
+  margin-left: 50px;
   background-color:mediumseagreen;
 }
 #count{
-  float:right;
+  margin-right: 50px;
   background-color:lightseagreen;
+
 }
 .modal{
   position:absolute;
