@@ -20,7 +20,7 @@ function setTime(){
 }
 function setCount(){
 
-  var stuff = Date.parse($("#date").val())+(new Date()).getTimezoneOffset()*60000;
+  var stuff = Date.parse($("#date").val())-(new Date()).getTimezoneOffset();
   setVisible(false,"#countDwn");
   $("#date").val("");
   setTimer(stuff);
