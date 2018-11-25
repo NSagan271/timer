@@ -16,19 +16,20 @@ h1{
   text-align:center;
   color:white;
   background-color:black;
-  border-radius:10px;
   padding:10px;
   margin:50px;
   margin-top:20px;
 }
+.btn-wrapper{
+  display: flex;
+}
 .btn{
   padding:5px;
-  border-radius:5px;
   display:inline-block;
   font-size:35px;
-
   margin-top:50px;
-  font-variant:small-caps;
+  color:white;
+  font-variant:all-small-caps;
   cursor: pointer;
 }
 #reset{
@@ -42,11 +43,13 @@ h1{
 #toTime{
   margin-left: 50px;
   background-color:mediumseagreen;
+  width: calc(50% - 55px);
+  margin-right: 5px;
 }
 #count{
   margin-right: 50px;
   background-color:lightseagreen;
-
+  width: calc(50% - 50px);
 }
 .modal{
   position:absolute;
@@ -85,4 +88,6 @@ input{
   margin:10px;
   background-color:mediumseagreen;
   font-size:30px;
+  text-align: center;
+  width: calc(100% - 30px);
 }

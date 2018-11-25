@@ -10,8 +10,10 @@
   <body>
     <h1>Countdown Timer</h1>
     <hr>
-    <div class="btn" id = "toTime" onclick="setVisible(true,'#setTime');reset = true;">Set Timer</div>
-    <div class="btn" id = "count" onclick="setVisible(true,'#countDwn');reset = true;">Set Countdown</div>
+    <div class="btn-wrapper">
+      <div class="btn" id = "toTime" onclick="setVisible(true,'#setTime');reset = true;">Set Timer</div>
+      <div class="btn" id = "count" onclick="setVisible(true,'#countDwn');reset = true;">Set Countdown</div>
+    </div>
     <h4 id="timer">0:00:00</h4>
     <div class="btn" id="reset" onclick="reset = true;">reset</div>
     <div class="modal" id="setTime">
@@ -30,7 +32,7 @@
     <div class="modal" id="countDwn">
       <div class="content">
         <div class="btn x" onclick="setVisible(false,'#countDwn')">x</div>
-        <h1>Set CountDown</h1>
+        <h1>Set Countdown</h1>
         <hr>
         <input type="datetime-local" id="date">
         <hr>
